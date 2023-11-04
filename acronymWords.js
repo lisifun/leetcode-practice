@@ -23,10 +23,10 @@ Hence, s = "a" is not the acronym.
 */
 
 var isAcronym = function (words, s) {
-  if (s.length !== words.length) {
+  if (words.length !== s.length) {
     return false;
   }
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     if (words[i][0] !== s[i]) {
       return false;
     }
